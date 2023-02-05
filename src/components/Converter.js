@@ -4,7 +4,7 @@ export const Converter = () => {
     const [hexColor, setHexColor] = useState("#");
     const [rgbColor, setRgbColor] = useState("");
     function handleChange(e) {
-        e.target.value.length <= 7 && setHexColor(e.target.value);
+        e.target.value.length <= 7 && e.target.value.length >= 1 && setHexColor(e.target.value);
         e.target.value.length === 7 && e.target.value[0] === '#' && setRgbColor(hexToRgb(e.target.value))
     };  
     function hexToRgb(hex){
