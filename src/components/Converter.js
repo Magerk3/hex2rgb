@@ -9,9 +9,9 @@ export const Converter = () => {
     };  
     function hexToRgb(hex){
     
-        var r = parseInt(hex.substring(1,3), 16);
-        var g = parseInt(hex.substring(3,5), 16);
-        var b = parseInt(hex.substring(5,7), 16);
+        const r = parseInt(hex.substring(1,3), 16);
+        const g = parseInt(hex.substring(3,5), 16);
+        const b = parseInt(hex.substring(5,7), 16);
         if(isNaN(r) || isNaN(g) || isNaN(b)) return "error"
         return "rgb(" + r + ", " + g + ", " + b + ")";
     
